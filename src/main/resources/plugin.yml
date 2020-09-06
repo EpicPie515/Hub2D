@@ -1,0 +1,10 @@
+name: Hub2D
+main: net.kjnine.MenuPlugin
+version: 0.0.1
+depend: [PacketListenerApi, PlayerVersion, MapManager]
+author: KJNine
+description: Use lightweight 2D Menus for server/game selection rather than hub servers.
+commands:
+    hubmenu:
+        default: true
+        description: Manage the Menu Screens

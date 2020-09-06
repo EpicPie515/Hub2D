@@ -1,0 +1,16 @@
+
+# NOTE: This plugin is meant to not be run on a hub server, 
+# where nothing else is expected to be done on that server.
+
+# Name of the world the menu should be in
+# The plugin will generate the empty world for the menu,
+# So if this is the same as the world in server.properties, delete the world folder before starting the server.
+world-name: hubmenu
+
+# Width and height (in blocks) of the menu.
+# height must be atleast 2; width atleast 1.
+width: 5
+height: 4
+
+# Set this to false if you want to disable the automatic update checker.
+check-for-updates: true
