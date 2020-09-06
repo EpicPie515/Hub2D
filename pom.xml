@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.kjnine</groupId>
-	<artifactId>2DMenu</artifactId>
+	<artifactId>Hub2D</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
-	<name>2DMenu</name>
+	<name>Hub2D</name>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
