@@ -29,7 +29,6 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.EntityType;
 import org.bukkit.entity.ItemFrame;
 import org.bukkit.entity.Player;
 import org.bukkit.generator.ChunkGenerator;
@@ -136,7 +135,9 @@ public class MenuPlugin extends JavaPlugin {
 		for(int x = minX; x < maxX; x++) {
 			for(int y = minY; y < maxY; y++) {
 				Block b = menuWorld.getBlockAt(x, y, 3);
-				ItemFrame frame = (ItemFrame) menuWorld.spawnEntity(b.getLocation(), EntityType.ITEM_FRAME);
+				Location loc = b.getLocation();
+				if(getServer().getClass().getPackage().getName().contains("1_8")) loc = loc.subtract(0, 0, 1);
+				ItemFrame frame = (ItemFrame) menuWorld.spawn(loc, ItemFrame.class);
 				frame.setFacingDirection(BlockFace.NORTH);
 				ItemStack map = new ItemStack(Material.MAP);
 				map.setDurability((short)2);
